@@ -1,0 +1,166 @@
+
+body {
+    font-family: "Raleway";
+    background-color: #f1f1f1;
+}
+a {
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    background: #0B2027;
+    display: flex;
+    min-height: 120px;
+    position: fixed;
+    width: 100%;
+}
+nav {
+    display: flex;
+    width: 100%;
+}
+main {
+    padding-top: 120px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+footer {
+    background-color: #16414f;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+.logo {
+    height: 100px;
+}
+.logo__image {
+    height: 100px;
+    padding: 10px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.centered {
+    text-align: center;
+}
+/***************************************
+**Navigation
+** ul.navigation>(li.navigation__item>a.navigation__link{Item$})*5
+***************************************/
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    color: white;
+    align-self: center;
+}
+.navigation__item {
+    display: flex;
+}
+.navigation__link {
+    padding: 52px 30px;
+    align-self: center;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: .3s ease;
+}
+.navigation__link:hover {
+    background-color: #16414f;
+}
+
+/***************************************
+**Articles
+** div.articles-wrapper>(a.article>(div.article__img-wrapper>img.article__img)+div.article__content>h2.article__title+p.article__text+a.btn{More...})*2
+***************************************/
+
+.articles-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+.article {
+    display: flex;
+    border-bottom: 1px solid #16414f;
+    width: 49%;
+    padding-bottom: 30px;
+}
+.article--big {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+    border-bottom: none;
+}
+.article--reverse {
+    flex-direction: row-reverse;
+}
+.article__img-wrapper--big {
+    padding: 60px 0 30px;
+}
+.article__title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.article__content {
+    padding: 0 15px;
+    margin-left: 15px;
+}
+.article__content--reverse {
+    text-align: right;
+    margin-right: 10px;
+}
+.article__content--big {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.article__text {
+    margin-bottom: 10px;
+    line-height: 24px;
+}
+
+.btn {
+    color: #0B2027;
+    transition: .3s ease;
+    max-width: 120px;
+    padding: 10px 0;
+}
+.btn:hover {
+    color: #2b7d98;
+}
+.btn--big {
+    padding: 10px 20px;
+    border: 1px solid #16414f;
+    border-radius: 4px;
+    max-width: 190px;
+    margin: 0 auto;
+}
+.btn--big:hover {
+    color: white;
+    background-color: #16414f;
+}
+
+.btn--info {
+    border: 1px solid #16414f;
+    border-radius: 4px;
+}
+.btn--info:hover {
+    color: white;
+    background-color: #16414f;
+}
+.btn--reverse {
+    margin-left: auto;
+}
+/***************************************
+**Jumbotron
+***************************************/
+.jumbotron {
+    border-top: 1px solid #16414f;
+    border-bottom: 1px solid #16414f;
+    margin: 30px 15px;
+}

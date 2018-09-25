@@ -89,14 +89,14 @@ footer {
     width: 49%;
     padding-bottom: 30px;
 }
+.article--reverse {
+    flex-direction: row-reverse;
+}
 .article--big {
     flex-direction: column;
     width: 100%;
     text-align: center;
     border-bottom: none;
-}
-.article--reverse {
-    flex-direction: row-reverse;
 }
 .article__img-wrapper--big {
     padding: 60px 0 30px;
